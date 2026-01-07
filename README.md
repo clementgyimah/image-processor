@@ -54,33 +54,35 @@ RUNNING THE PROJECT (OPTION 1: LOCAL PYTHON)
 
 Using SSH:
 
-git clone git@github.com:clementgyimah/image-processor.git
+`git clone git@github.com:clementgyimah/image-processor.git`
 
 Using HTTPS:
 
-git clone https://github.com/clementgyimah/image-processor.git
+`git clone https://github.com/clementgyimah/image-processor.git`
 
 Then:
 
-cd image-processor
+`cd image-processor`
 
 2. Create and activate virtual environment
 
-python -m venv venv
-source venv/bin/activate (macOS / Linux)
-venv\Scripts\activate (Windows)
+`python -m venv venv`
+
+`source venv/bin/activate` (macOS / Linux)
+
+`venv\Scripts\activate` (Windows)
 
 3. Install dependencies
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 4. Create uploads directory (required)
 
-mkdir uploads
+`mkdir uploads`
 
 5. Run the FastAPI server
 
-uvicorn app.main:app --reload
+`uvicorn app.main:app --reload`
 
 6. Open Swagger UI
 
@@ -92,11 +94,11 @@ RUNNING THE PROJECT (OPTION 2: DOCKER)
 
 1. Build Docker image
 
-docker build -t image-processor .
+`docker build -t image-processor .`
 
 2. Run Docker container
 
-docker run -p 8000:8000 image-processor
+`docker run -p 8000:8000 image-processor`
 
 NOTE:
 
@@ -114,7 +116,7 @@ API AUTHENTICATION
 All endpoints require an API key.
 
 Header:
-api-key: veefyedprocessor2026
+`api-key: veefyedprocessor2026`
 
 ---
 
@@ -129,9 +131,12 @@ Uploads an image.
 - Max file size: 5MB
 
 Response:
+
+```
 {
-"image_id": "abc123"
+  "image_id": "abc123"
 }
+```
 
 ---
 
@@ -140,17 +145,23 @@ POST /analyze
 Performs mock analysis on an uploaded image.
 
 Request body:
+
+```
 {
 "image_id": "abc123"
 }
+```
 
 Response:
+
+```
 {
-"image_id": "abc123",
-"skin_type": "Oily",
-"issues": ["Hyperpigmentation"],
-"confidence": 0.87
+  "image_id": "abc123",
+  "skin_type": "Oily",
+  "issues": ["Hyperpigmentation"],
+  "confidence": 0.87
 }
+```
 
 Errors:
 
