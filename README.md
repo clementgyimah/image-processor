@@ -148,7 +148,7 @@ Request body:
 
 ```
 {
-"image_id": "abc123"
+  "image_id": "abc123"
 }
 ```
 
