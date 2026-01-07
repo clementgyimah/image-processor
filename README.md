@@ -105,7 +105,7 @@ API AUTHENTICATION
 All endpoints require an API key.
 
 Header:
-X-API-KEY: mysecretkey
+api-key: veefyedprocessor2026
 
 ---
 
