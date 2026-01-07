@@ -26,7 +26,8 @@ For Docker run:
 
 PROJECT STRUCTURE
 
-`app/
+```
+app/
 ├── main.py
 ├── routes/
 │ ├── upload.py
@@ -42,7 +43,8 @@ PROJECT STRUCTURE
 uploads/ (runtime-generated, ignored in git)
 Dockerfile
 requirements.txt
-README.md`
+README.md
+```
 
 ---
 
