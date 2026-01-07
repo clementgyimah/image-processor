@@ -50,10 +50,19 @@ README.md
 
 RUNNING THE PROJECT (OPTION 1: LOCAL PYTHON)
 
-1. Clone the repository and cd into it
+1. Clone the repository and navigate into it
 
-`git clone git@github.com:clementgyimah/image-processor.git` or `git clone https://github.com/clementgyimah/image-processor.git`
-`cd image-processor`
+Using SSH:
+
+git clone git@github.com:clementgyimah/image-processor.git
+
+Using HTTPS:
+
+git clone https://github.com/clementgyimah/image-processor.git
+
+Then:
+
+cd image-processor
 
 2. Create and activate virtual environment
 
