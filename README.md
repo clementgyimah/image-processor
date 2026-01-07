@@ -1,4 +1,4 @@
-# Image Analysis API (FastAPI)
+# Image Processing API (FastAPI)
 
 A simple backend service that allows a mobile app to:
 
@@ -33,8 +33,8 @@ app/
 │ ├── upload.py
 │ └── analyze.py
 ├── services/
-│ ├── image_service.py
-│ └── analysis_service.py
+│ ├── image.py
+│ └── analyze.py
 ├── utils/
 │ ├── validators.py
 │ ├── auth.py
