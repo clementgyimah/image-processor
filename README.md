@@ -50,10 +50,10 @@ README.md
 
 RUNNING THE PROJECT (OPTION 1: LOCAL PYTHON)
 
-1. Clone the repository
+1. Clone the repository and cd into it
 
-git clone <your-repo-url>
-cd image-processor
+`git clone git@github.com:clementgyimah/image-processor.git` or `git clone https://github.com/clementgyimah/image-processor.git`
+`cd image-processor`
 
 2. Create and activate virtual environment
 
